@@ -12,4 +12,5 @@ To run the code, type the following command at you terminal:
   python TTFolderCreator.py --data_path sample_images
 
 
-Caution: Do not define the 'train' and 'test' folder in the source folder before running this code. These folders will be               created automatically.
+Caution: Do not create the 'train' and 'test' folder in the source folder before running this code. 
+          These folders will automatically deleted and created.
