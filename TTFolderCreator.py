@@ -36,10 +36,10 @@ no_train = 70
 no_test = 30
 
 # Removing the train and test folder if they exist
-    if os.path.exists(data_path+'/train'):
-        shutil.rmtree(data_path+'/train')
-    if os.path.exists(data_path+'/test'):
-        shutil.rmtree(data_path+'/test')
+if os.path.exists(data_path+'/train'):
+    shutil.rmtree(data_path+'/train')
+if os.path.exists(data_path+'/test'):
+    shutil.rmtree(data_path+'/test')
  
 # counting the number of images in the folder
 count = 0
