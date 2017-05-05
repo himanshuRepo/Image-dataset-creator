@@ -24,7 +24,7 @@ import numpy
 import random, os
 import shutil
 
-parser = argparse.ArgumentParser(description=" Shuffled training and testing image folder creator.")
+parser = argparse.ArgumentParser(description=" Randomly placed training and testing image folder creator.")
 parser.add_argument('--data_path', action="store", dest="data_path", required=True)
 args =  vars(parser.parse_args())
 
@@ -35,6 +35,11 @@ data_path = args['data_path']
 no_train = 70
 no_test = 30
 
+# Removing the train and test folder if they exist
+    if os.path.exists(data_path+'/train'):
+        shutil.rmtree(data_path+'/train')
+    if os.path.exists(data_path+'/test'):
+        shutil.rmtree(data_path+'/test')
  
 # counting the number of images in the folder
 count = 0
