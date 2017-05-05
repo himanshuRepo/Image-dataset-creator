@@ -10,3 +10,6 @@ sample_images: Images in the 'sample_images' folder are taken from  'tick' categ
 To run the code, type the following command at you terminal:
   
   python TTFolderCreator.py --data_path sample_images
+
+
+Caution: Do not define the 'train' and 'test' folder in the source folder before running this code. These folders will be               created automatically.
